@@ -55,3 +55,50 @@ p{
     margin: 20px 35px;
     font-size: 15px;
 }
+
+/* mobiles */
+
+@media (max-width:375px){
+    .parent{
+        width: 300px;
+        height: 500px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin: 100px auto;
+    }
+    
+    
+    img{
+        width: 250px;
+        height: 250px;
+        margin: 25px;
+        border-radius: 20px;
+    }
+}
+
+
+@media (max-width:1440px){
+    .parent{
+        width: 350px;
+        height: 525px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin: 100px auto;
+    }
+    
+    
+    img{
+        width: 300px;
+        height: 300px;
+        margin: 25px;
+        border-radius: 20px;
+    }
+}
