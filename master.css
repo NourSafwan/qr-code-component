@@ -1,38 +1,45 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 :root{
     font-family: 'Outfit', sans-serif;
     text-align: center;
+    font-size: 15px;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
-    position: absolute;
-    bottom: 1%;
-    left: 50%;
-    transform: translate(-50%);
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
 body {
     background-color:hsl(212, 45%, 89%);
+    display: flex;
+    min-height: 100vh;
+    padding: 10px;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
-.parent{
-    width: 350px;
-    height: 525px;
+main{
+    max-width: 350px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    margin: 100px auto;
+    padding: 20px;
 }
 
 
@@ -44,61 +51,14 @@ img{
 }
 
 
-img~div{
+h1{
     margin: 0px 25px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 
 p{
     margin: 20px 35px;
-    font-size: 15px;
-}
-
-/* mobiles */
-
-@media (max-width:375px){
-    .parent{
-        width: 300px;
-        height: 500px;
-        background-color: hsl(0, 0%, 100%);
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        margin: 100px auto;
-    }
-    
-    
-    img{
-        width: 250px;
-        height: 250px;
-        margin: 25px;
-        border-radius: 20px;
-    }
-}
-
-
-@media (max-width:1440px){
-    .parent{
-        width: 350px;
-        height: 525px;
-        background-color: hsl(0, 0%, 100%);
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        margin: 100px auto;
-    }
-    
-    
-    img{
-        width: 300px;
-        height: 300px;
-        margin: 25px;
-        border-radius: 20px;
-    }
+    font-size: 1rem;
 }
